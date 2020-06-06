@@ -27,10 +27,21 @@ function readLine() {
 // Complete the compareTriplets function below.
 function compareTriplets(a, b) {
 
-    if () {
+    let points = [0, 0];
 
+    // can only function if arrays are same length
+    if (a.length == b.length) {
+        // compare every element in array
+        for (let i= 0; i < a.length; i++) {
+            // compare two conditions
+            if (a[i] < b[i])
+                points[1] += 1;
+            else if (a[i] > b[i])
+                points[0] += 1;
+        }
     }
 
+    return points;
 }
 
 function main() {
