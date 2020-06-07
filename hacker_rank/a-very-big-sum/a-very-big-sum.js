@@ -28,8 +28,7 @@ function readLine() {
 
 // Complete the aVeryBigSum function below.
 function aVeryBigSum(ar) {
-
-
+    return ar.reduce((sum, n) => sum + n);
 }
 
 function main() {
